@@ -1,19 +1,13 @@
 import Header from '@/Components/Header';
 import styles from './page.module.css';
+import Description from '@/Components/Description';
 
-function Description() {
-  return (
-    <>
-      <div>DES</div>
-      <div>DES</div>
-    </>
-  );
-}
+let x = false;
 function Home() {
   return (
     <main className={styles.main}>
-      <Header text="Hello m" />
-      <Description />
+      {x && <Header text="Hello m" />}
+      <Description desc="let's do it " />
     </main>
   );
 }
